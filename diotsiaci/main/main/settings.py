@@ -15,6 +15,9 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -48,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'main.urls'
@@ -111,6 +115,24 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+# Langue par défaut
+LANGUAGE_CODE = 'fr'
+
+# Fuseau horaire par défaut
+TIME_ZONE = 'Europe/Paris'
+
+# Définir les langues disponibles
+LANGUAGES = [
+    ('en', 'English'),
+    ('fr', 'Français'),
+    # Ajoutez d'autres langues si nécessaire
+]
+
+# Chemin vers les fichiers de traduction
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 
 
 # Static files (CSS, JavaScript, Images)
