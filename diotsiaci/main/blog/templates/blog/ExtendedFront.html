@@ -1,7 +1,8 @@
 {% extends 'blog/base.html' %} {% load i18n %} {% block content %}
 <a href="/fr/" role="button">{% trans "French" %}</a>
 <a href="/en/" role="button">{% trans "English" %}</a>
-<div class="bienvenue">{{ msg }}</div>
+
+<div class="bienvenue">{% trans "Welcome" %}</div>
 
 {% for post in posts %}
 <div class="post block">

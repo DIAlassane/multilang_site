@@ -1,54 +1,29 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 14:42+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2024-06-23 21:09+0200\n"
+"PO-Revision-Date: 2024-06-23 19:22+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: French <fr@li.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: blog/templates/blog/ExtendedFront.html:2
-msgid "Français"
-msgstr "French"
-
-#: blog/templates/blog/ExtendedFront.html:3
-msgid "Anglais"
-msgstr "English"
-
-#
-#: blog/templates/blog/ExtendedFront.html:9
-msgid "Posted at"
-msgstr "Poster á"
-
-#: blog/templates/blog/base.html:20
-msgid "Trouvez vos poémes"
-msgstr "Find your poeme"
-
-#: blog/views.py:7
-msgid "Bienvenue"
-msgstr "Welcome"
-
-#
-#: main/settings.py:127
-msgid "English"
-msgstr "Anglais"
-
-#
-#: main/settings.py:128
+#: blog/templates/blog/ExtendedFront.html:2 main/settings.py:109
 msgid "French"
 msgstr "Français"
 
-#
-#~ msgid "Find your poeme"
-#~ msgstr "Trouvez vos poémes"
+#: blog/templates/blog/ExtendedFront.html:3 main/settings.py:108
+msgid "English"
+msgstr "Anglais"
+
+#: blog/templates/blog/ExtendedFront.html:5
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: blog/templates/blog/ExtendedFront.html:10
+msgid "Posted at"
+msgstr "Poster le"
