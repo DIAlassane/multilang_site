@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 21:09+0200\n"
+"POT-Creation-Date: 2024-06-24 19:45+0200\n"
 "PO-Revision-Date: 2024-06-23 19:22+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -12,18 +12,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: blog/templates/blog/ExtendedFront.html:2 main/settings.py:109
-msgid "French"
-msgstr "Français"
-
-#: blog/templates/blog/ExtendedFront.html:3 main/settings.py:108
-msgid "English"
-msgstr "Anglais"
-
-#: blog/templates/blog/ExtendedFront.html:5
+#: blog/templates/blog/ExtendedFront.html:2
 msgid "Welcome"
 msgstr "Bienvenue"
 
-#: blog/templates/blog/ExtendedFront.html:10
+#: blog/templates/blog/ExtendedFront.html:3 main/settings.py:109
+msgid "French"
+msgstr "Français"
+
+#: blog/templates/blog/ExtendedFront.html:4 main/settings.py:108
+msgid "English"
+msgstr "Anglais"
+
+#: blog/templates/blog/ExtendedFront.html:9
 msgid "Posted at"
 msgstr "Poster le"
+
+#: blog/templates/blog/ExtendedFront.html:16
+msgid "Chat with our assistant:"
+msgstr "Parle avec ton assistant"
+
+#: blog/templates/blog/ExtendedFront.html:20
+msgid "Type your message..."
+msgstr "Entrez vôtre message..."
+
+#: blog/templates/blog/ExtendedFront.html:21
+msgid "Send"
+msgstr "Envoyer"

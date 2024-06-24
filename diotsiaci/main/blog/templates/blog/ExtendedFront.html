@@ -1,8 +1,7 @@
 {% extends 'blog/base.html' %} {% load i18n %} {% block content %}
-<a href="/fr/" role="button">{% trans "French" %}</a>
-<a href="/en/" role="button">{% trans "English" %}</a>
-
-<div class="bienvenue">{% trans "Welcome" %}</div>
+<h1 class="title is-1 has-text-centered">{% trans "Welcome" %}</h1>
+<a href="/fr/" role="button" class="button is-dark">{% trans "French" %}</a>
+<a href="/en/" role="button" class="button is-dark">{% trans "English" %}</a>
 
 {% for post in posts %}
 <div class="post block">
@@ -10,4 +9,24 @@
   <small>{% trans "Posted at" %} {{ post.publication_date }}</small>
   <p>{{ post.content }}</p>
 </div>
-{% endfor %} {% endblock %}
+{% endfor %}
+
+<!-- Interface du chatbot -->
+<div id="chatbot">
+  <h3 class="breadcrumb is-large has-text-centered">
+    {% trans "Chat with our assistant:" %}
+  </h3>
+
+  <form method="post" action="{% url 'ExtendedFront' %}">
+    {% csrf_token %} <input type="text" name="user_input" class="input is-black"
+    id="user_input" placeholder="{% trans "Type your message..." %}" />
+    <button type="submit" class="buttons button is-centered is-info">
+      {% trans "Send" %}
+    </button>
+  </form>
+  {% if response %}
+  <div id="chat-log">{{ response }}</div>
+  {% endif %}
+</div>
+
+{% endblock %}
